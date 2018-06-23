@@ -1,7 +1,7 @@
 # yatrash
-Safely move files into a trash can.
+Safely move files into a trash can instead of `rm`.
 
-Train yourself to use `trash` instead of `rm`.
+OS Independent, as long as your OS supports Python's `pathlib` and `shutil`.
 
 Now living on [Github][5]
 

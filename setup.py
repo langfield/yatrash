@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
+import pypandoc
 from setuptools import setup, find_packages
 
-with open('README.md') as f:
-    long_description = f.read()
+long_description = pypandoc.convert('README.md', 'rst')
 
-description = long_description.split('\n')[1]
+description = 'Safely move files into a trash can instead of `rm`.'
 
 classifiers='''
 Natural Language :: English
@@ -16,11 +16,9 @@ Programming Language :: Python :: 3.6
 Topic :: Utilities
 '''
 
-print(find_packages())
-
 setup(
     name='yatrash',
-    version='0.1',
+    version='0.1.2',
     description=description,
     author='Samuel Grayson',
     author_email='sam@samgrayson.me',
