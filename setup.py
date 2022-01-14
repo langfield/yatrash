@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 
-import pypandoc
 from setuptools import setup, find_packages
 
-long_description = pypandoc.convert('README.md', 'rst')
+long_description = ""
 
 description = 'Safely move files into a trash can instead of `rm`.'
 
